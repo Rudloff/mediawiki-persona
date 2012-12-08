@@ -86,7 +86,7 @@ class SpecialMozillaPersona extends SpecialPage
                         'UserLoginComplete',
                         array( &$currentUser, &$injected_html )
                     );
-                    $this->getOutput()->redirect('Accueil');
+                    $this->getOutput()->redirect('index.php?title=Accueil');
                 } else {
                     $output->addWikiText(wfMsg('unknown_email'));
                 }
